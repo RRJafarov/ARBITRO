@@ -1,0 +1,103 @@
+#footer {
+  position: relative;
+  background-image: url(https://www.arbitro.az/img/bg/6.jpg);
+  background-size: cover;
+  width: 100%;
+  // height: 325px;
+  &::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .col-12 {
+    z-index: 5;
+    padding-bottom: 40px;
+    img {
+      width: 300px;
+      padding-top: 65px;
+    }
+    ul {
+      margin: 0px;
+      padding-left: 0px;
+      padding-top: 65px;
+      li {
+        list-style: none;
+        height: 30px;
+        border-bottom: 1px dashed #c38b2f;
+        i {
+          font-size: 10px;
+          color: white;
+          padding-right: 10px;
+        }
+        a {
+          text-decoration: none;
+          font-size: 14px;
+          font-weight: 100;
+          font-family: "Poppins", sans-serif;
+          color: white;
+          &:hover {
+            // color: #c48e34;
+            color: #656433;
+            transition: all 0.5s linear;
+          }
+        }
+      }
+    }
+    .footer-icon {
+      padding-top: 25px;
+      display: flex;
+      .icon-item {
+        width: 35px;
+        height: 35px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 2px;
+        background-color: #c48e34;
+        cursor: pointer;
+        &:hover {
+          background-color: #656433;
+          transition: all 0.2s ease-in-out;
+        }
+        a {
+          color: white;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+#foot-end{  
+  height: 80px;
+  .foot-end{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #c48e34;
+    p{
+      color: #fff;
+      text-align: center;
+      margin: 0px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      span{
+        color: #656433;
+        cursor: pointer;
+        &:hover{
+          color: #434200;
+          font-weight: 600;
+          transition: all .3s linear;
+        }
+      }
+    }
+  }
+}

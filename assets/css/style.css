@@ -1,0 +1,409 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather+Sans|Noto+Serif|Poppins");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,600,600i,700,700i");
+#navbar {
+  z-index: 15;
+  background: white;
+  width: 100%;
+  height: 85px;
+  border-bottom: #c38b2f solid 3px;
+  position: fixed;
+}
+#navbar .container-md {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+#navbar .container-md .col-12 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  width: 100% !important;
+}
+#navbar .container-md .col-12 .header-logo img {
+  position: absolute;
+  top: -64px;
+  left: 4.1%;
+  width: auto;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: drop-shadow(1px 1px 0px black);
+}
+#navbar .container-md .col-12 .header-action ul {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#navbar .container-md .col-12 .header-action ul li {
+  list-style: none;
+  padding: 15px;
+}
+#navbar .container-md .col-12 .header-action ul li a {
+  font-size: 14px;
+  color: #676767;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: "Merriweather", serif;
+  line-height: 26px;
+}
+#navbar .container-md .col-12 .header-action ul li a:hover {
+  font-size: 18px;
+  color: #676767;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+#navbar .container-md .col-12 .header-action ul li i {
+  color: #676767;
+}
+#navbar .container-md .col-12 .dropdown {
+  position: relative;
+}
+#navbar .container-md .col-12 .dropdown .drop {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  background-color: #fff;
+  margin-left: -120px;
+  margin-top: 10px;
+  border: 1px solid #676767;
+}
+#navbar .container-md .col-12 .dropdown .drop li {
+  padding: 0.5rem;
+  width: 250px;
+  height: 100%;
+  border-bottom: 1px dashed #676767;
+}
+#navbar .container-md .col-12 .dropdown .drop li:hover {
+  font-size: 14px;
+  color: #fff;
+  background: #c38b2f;
+  transition: all 0.3s linear;
+}
+#navbar .container-md .col-12 .dropdown .drop li a {
+  font-size: 14px;
+}
+#navbar .container-md .col-12 .dropdown .drop li a:hover {
+  font-size: inherit;
+  color: #fff;
+  background: #c38b2f;
+  transition: all 0.3s linear;
+}
+#navbar .container-md .col-12 .dropdown:hover .drop {
+  display: block;
+}
+#navbar .container-md .col-12 .dropdown-icon {
+  position: relative;
+}
+#navbar .container-md .col-12 .dropdown-icon .drop-icon {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  background-color: #fff;
+  margin-left: -30px;
+  margin-top: 10px;
+  border: 1px solid #676767;
+}
+#navbar .container-md .col-12 .dropdown-icon .drop-icon li {
+  padding: 0rem;
+  padding-left: 25px;
+  width: 100px;
+  border-bottom: 1px dashed #676767;
+}
+#navbar .container-md .col-12 .dropdown-icon .drop-icon li:hover {
+  font-size: 14px;
+  color: #fff;
+  background: #c38b2f;
+  transition: all 0.3s linear;
+}
+#navbar .container-md .col-12 .dropdown-icon .drop-icon li img {
+  width: 25px;
+  height: 20px;
+}
+#navbar .container-md .col-12 .dropdown-icon .drop-icon li a {
+  font-size: 14px;
+}
+#navbar .container-md .col-12 .dropdown-icon .drop-icon li a:hover {
+  font-size: inherit;
+  color: #fff;
+  background: #c38b2f;
+  transition: all 0.3s linear;
+}
+#navbar .container-md .col-12 .dropdown-icon:hover .drop-icon {
+  display: block;
+}
+
+@media only screen and (max-width: 991.98px) {
+  #navbar .container-md .col-12 {
+    position: relative !important;
+  }
+  #navbar .container-md .col-12 .header-logo img {
+    left: 2.2% !important;
+    top: -80px !important;
+    height: 240px !important;
+  }
+  #navbar .container-md .col-12 .header-action {
+    margin-top: 6.5% !important;
+  }
+  .nHeight {
+    height: 135px !important;
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  #navbar .container-md .col-12 {
+    position: relative !important;
+  }
+  #navbar .container-md .col-12 .header-logo img {
+    left: -3% !important;
+    top: -65px !important;
+    height: 200px !important;
+  }
+  #navbar .container-md .col-12 .web-navbar {
+    display: none !important;
+  }
+  #navbar .container-md .col-12 .mobile-icon {
+    display: block !important;
+    float: right !important;
+    margin-right: 4rem !important;
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    border: 1px solid #ddd;
+    padding: 0 0.5rem;
+    border-radius: 5px;
+  }
+  #navbar .container-md .col-12 .mobile-icon i {
+    color: #676767;
+  }
+  #navbar .container-md .col-12 .mobile-navbar {
+    display: block !important;
+    visibility: hidden;
+  }
+  #navbar .container-md .col-12 .mobile-navbar ul {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: start !important;
+    align-items: flex-start !important;
+    margin-top: 5rem !important;
+    margin-left: 2rem !important;
+  }
+  #navbar .container-md .col-12 .visibility {
+    visibility: visible !important;
+    transition: 0.5s !important;
+  }
+  .nHeight {
+    height: 85px !important;
+    transition: 0.5s !important;
+  }
+  .height {
+    height: auto !important;
+    transition: 0.5s !important;
+  }
+}
+#footer {
+  position: relative;
+  background-image: url(https://www.arbitro.az/img/bg/6.jpg);
+  background-size: cover;
+  width: 100%;
+}
+#footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+#footer .col-12 {
+  z-index: 5;
+  padding-bottom: 40px;
+}
+#footer .col-12 img {
+  width: 300px;
+  padding-top: 65px;
+}
+#footer .col-12 ul {
+  margin: 0px;
+  padding-left: 0px;
+  padding-top: 65px;
+}
+#footer .col-12 ul li {
+  list-style: none;
+  height: 30px;
+  border-bottom: 1px dashed #c38b2f;
+}
+#footer .col-12 ul li i {
+  font-size: 10px;
+  color: white;
+  padding-right: 10px;
+}
+#footer .col-12 ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 100;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+#footer .col-12 ul li a:hover {
+  color: #656433;
+  transition: all 0.5s linear;
+}
+#footer .col-12 .footer-icon {
+  padding-top: 25px;
+  display: flex;
+}
+#footer .col-12 .footer-icon .icon-item {
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2px;
+  background-color: #c48e34;
+  cursor: pointer;
+}
+#footer .col-12 .footer-icon .icon-item:hover {
+  background-color: #656433;
+  transition: all 0.2s ease-in-out;
+}
+#footer .col-12 .footer-icon .icon-item a {
+  color: white;
+  font-size: 14px;
+}
+
+#foot-end {
+  height: 80px;
+}
+#foot-end .foot-end {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #c48e34;
+}
+#foot-end .foot-end p {
+  color: #fff;
+  text-align: center;
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+#foot-end .foot-end p span {
+  color: #656433;
+  cursor: pointer;
+}
+#foot-end .foot-end p span:hover {
+  color: #434200;
+  font-weight: 600;
+  transition: all 0.3s linear;
+}
+
+#text {
+  background-image: url(https://www.arbitro.az/img/bg/2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+}
+#text .text {
+  background-image: url(https://www.arbitro.az/img/bg/2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+#text .text h1 {
+  color: #fff;
+  font-family: "Merriweather", serif;
+  padding-top: 170px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#blog {
+  padding-top: 150px;
+  padding-bottom: 50px;
+}
+#blog .container .row .col {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+#blog .container .row .col .blog-cart-item {
+  width: 350px;
+  padding-bottom: 20px;
+  background-color: #fff;
+}
+#blog .container .row .col .blog-cart-item .card-body img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: inherit;
+}
+#blog .container .row .col .blog-cart-item .card-body h2 {
+  padding: 20px 20px 5px 0px;
+  font-size: 18px;
+  font-family: "Merriweather", serif;
+  font-weight: 600;
+}
+#blog .container .row .col .blog-cart-item .card-body p {
+  font-size: 14px;
+  font-family: "Merriweather", serif;
+}
+#blog .container .row .col .blog-cart-item .card-body a {
+  border-bottom: 1px solid black;
+  font-family: "Merriweather", serif;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 13px;
+  text-decoration: none;
+  list-style: none;
+  color: #000;
+}
+#blog .container .row .col .blog-cart-item .card-body a:hover {
+  border-bottom: 0px;
+  color: #c38b2f;
+  transition: 0.3s;
+}
+
+#news {
+  padding-top: 150px;
+}
+#news .container .row .col-8 img {
+  width: 100%;
+}
+#news .container .row .col-4 .news-right h1 {
+  font-size: 22px;
+}
+#news .container .row .col-4 .news-right .news-item {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+}
+#news .container .row .col-4 .news-right .news-item img {
+  width: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#news .container .row .col-4 .news-right .news-item h1 {
+  padding-left: 5px;
+  padding-right: 10px;
+  font-size: 16px;
+}
+#news .container .row .col-4 .news-right .news-item p {
+  padding-left: 5px;
+  font-size: 16px;
+}
+
+#news-text .container .row .col-8 p {
+  padding-top: 50px;
+}
+#news-text .container .row .col-8 h1 {
+  padding-top: 50px;
+  font-size: 20px;
+  font-weight: 600;
+}
